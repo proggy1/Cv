@@ -1,0 +1,327 @@
+/* Start Global Rules */
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+  /* Small */
+  @media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+.line{
+  display: inline-block;
+  width: 2px;
+  height: 14px; 
+  background-color: hsl(0, 0%, 70%);
+  margin: 15px 15px 0 15px;
+}
+
+.flex-container{
+  height: fit-content;
+  width: fit-content;
+  margin-top: 30px; 
+  margin-left: 7%;
+  padding-bottom: 60px;
+}
+
+.flex-box{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: fit-content;
+  margin-top: 20px;
+}
+
+.flex-box .img{
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/dog.jpg);
+  background-size: cover;
+  position: relative;
+  border-radius: 10px 0 0 10px;
+}
+
+.flex-box .text{
+  width: 400px;
+  background-color: #eee;
+  padding: 20px;
+  box-shadow: 3px 5px 10px 0 hsl(0, 0%, 80%);
+}
+
+.flex-box .text h2{
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.flex-box .text p{
+  font-size: 14px;
+  color: #777;
+  margin: 15px 0;
+}
+
+.flex-box .text button{
+border: none;
+cursor: pointer;
+color: red;
+}
+
+.flex-container ul{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.flex-container ul li{
+  margin-left: 20px;
+  color: hsl(0, 0%, 70%);
+  border-radius: 50%;
+  border : 1px solid hsl(0, 0%, 70%);
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.flex-container ul li.active{
+  background-color: red;
+  color: white;
+  border-color:red;
+}
+
+.sidebar{
+  margin-top: 50px;
+  margin-left: 20px;
+  width: 250px;
+}
+
+.sidebar input:focus{
+  outline: none;
+}
+
+.sidebar input{
+  border: 1px solid hsl(0, 0%, 80%);
+  padding: 10px;
+  border-radius:20px;
+}
+
+.sidebar .categories{
+  padding: 20px 0;
+}
+
+.sidebar  .heading{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+hr{
+  margin:10px 0;
+  border: 1px solid hsl(0, 0%, 80%);
+}
+
+.sidebar .categories .flex-num{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  color: #777;
+}
+
+.sidebar .categories .flex-num p{
+  text-transform: capitalize;
+}
+
+.sidebar .recent-post .box{
+  display: flex;
+  padding:5px 0;
+}
+
+.sidebar .recent-post .box .photo{
+  height: 100px;
+  width: 100px;
+  background-image: url(../img/dog.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.sidebar .recent-post .box .text{
+  margin-left: 10px;
+}
+
+.sidebar .recent-post .box p{
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.sidebar .special-offer{
+  width: 100%;
+  height: fit-content;
+  background-color: hsl(0, 0%, 15%);
+  color: white;
+  padding: 20px 15px;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+
+.sidebar .special-offer div{
+  font-size: 38px;
+  font-style: italic;
+}
+
+.sidebar .special-offer span{
+  color: red;
+  font-size: 70px;
+}
+
+.sidebar .special-offer p{
+  font-size: 14px;
+}
+
+.sidebar .special-offer  button{
+  border: none;
+  padding: 10px 20px;
+  margin: 20px 0;
+  font-size: 17px;
+  text-transform: uppercase;
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 3px 0 0 darkred;
+}
+
+
+
+
+.sidebar .instgram{
+  padding: 20px 0;
+}
+
+.sidebar .instgram .grid-container{
+  display: grid;
+  grid-template-columns: repeat(3,80px);
+  grid-template-rows: repeat(3,80px);
+  grid-gap: 10px;
+}
+
+.sidebar .instgram .grid-container div{
+  background-image: url(../img/dog.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.sidebar .tags .box{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar .tags .box div{
+  background-color: hsl(0, 0%, 90%);
+  padding: 10px;
+  margin: 5px;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+footer{
+  width: 100%;
+  height: 70px;
+  margin-top: 100px;
+  background-color: hsl(0, 0%, 15%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+footer .box{
+  height: 100px;
+  width: 60%;
+  top: -50px;
+  position: absolute;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  border-radius: 10px;
+  padding: 0  20px;
+}
+
+footer .box .text{
+  color: white;
+}
+
+footer .box .text p{
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+footer .box > *{
+  width: 40%;
+}
+
+footer .box form input:focus{
+  outline: none;
+}
+
+footer .box form input:first-of-type{
+  padding: 20px;
+  width: 280px;
+  background-color: hsl(0, 100%, 60%);
+  color: white;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 30px;
+}
+
+footer .box form input:last-of-type{
+  position: absolute;
+  right: 40px;
+  top: 33px;
+  background-color: white;
+  color: red;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0px 3px 0 0 hsl(0, 0%, 80%);
+}
